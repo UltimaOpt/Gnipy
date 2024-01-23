@@ -17,3 +17,30 @@ img {
 h1, p, input {
     text-align: center;
 }
+
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 50px repeat(6, 1fr); /* 50px for the time column, 1fr for each day of the week */
+      grid-template-rows: repeat(24, 1fr); /* Each row represents an hour of the day */
+      gap: 1px;
+    }
+
+    .time-column {
+      grid-column: 1;
+    }
+
+    .day-cell {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      grid-column: 2;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
