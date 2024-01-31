@@ -1,46 +1,129 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* 100% of the viewport height */
-    margin: 0; /* Remove default margin to avoid extra space */
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.calendar-container{
+  margin-top: 300px;
+  width: 770px;
 }
 
 img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 150px; /* Adjust the max-width as needed */
-}
-
-h1, p, input {
-    text-align: center;
+  max-width: 150px;
+  margin-right: 10px;
 }
 
 
-    body {
-      font-family: Arial, sans-serif;
-    }
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: 50px repeat(6, 1fr); /* 50px for the time column, 1fr for each day of the week */
-      grid-template-rows: repeat(24, 1fr); /* Each row represents an hour of the day */
-      gap: 1px;
-    }
+.main-container{
+  margin-top:100px;
 
-    .time-column {
-      grid-column: 1;
-    }
+}
 
-    .day-cell {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-      grid-column: 2;
-    }
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:#5A5A5A; /* Set background color */
+  color: #fff; /* Set text color */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center align text */
+  width: 100%;
+  z-index: 1000; /* Set a higher z-index to ensure it's on top of other elements */
+}
 
-    .highlight {
-      background-color: yellow;
-    }
+
+#header {
+  padding: 10px;
+  color: #d36c6c;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#header button {
+  background-color:#92a1d1;
+}
+#container {
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #247BA0;
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + #currentDay {
+  background-color:#e8f4fa;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+
+
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+#saveButton, #closeButton {
+  background-color: #92a1d1;
+}
+#eventText {
+  font-size: 14px;
+}
+
+
+
+#date{
+
+}
+

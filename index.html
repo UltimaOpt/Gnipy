@@ -5,26 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
-    
 </head>
 <body>
 
-    <img src="practice brand.png" alt="img of logo" >
-    <h1>GNIPY</h1>
-<p>Hi what is your name?</p>
-<input type="text" id="username" name="username">
-<p>When are you available?</p>
-<div id='calendar'> </div>
-<div class="grid-container">
+    <div class="banner">
+        <img src="brand.png" alt="img of logo">
+    </div>
 
-</div>
+    <div class="main-container">
+        <p>Hi, When would you like to plan for?</p>
+        <button type="button" id="dayButton">Day</button>
+        <button type="button" id="weekButton">Week</button>
+        <button type="button" id="monthButton">Month</button>
+        <button type="button" id="customiseButton">Customise</button>
+    </div>
 
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <div id="monthDisplay">
+                <p></p>
+            </div>
+            <button id="nextClicked">Next</button>
+            <button id="backClicked">Back</button>
+        </div>
+        <div id="weekdays">
+            <div>Sunday</div>
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+        </div>
+        <div id="calendar"></div>
+    </div>
 
+    <div id="timeContainer">
+        <div id="dateDisplay"></div>
+    </div>
+    
 
-
-
-
-
-
+    <script src="./main.js"></script>
 </body>
 </html>
